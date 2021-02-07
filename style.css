@@ -176,3 +176,38 @@ i {
 #dice-2 {
     top: 240px;
 }
+
+/* rules */
+.rules {
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    left: 53px;
+    top: 170px;
+    padding: 20px 30px;
+    line-height: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: height .3s;
+}
+
+.rules h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rules__box {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s linear;
+}
+
+.rules:hover {
+    height: 400px;
+}
+
+.rules:hover .rules__box {
+    visibility: visible;
+    opacity: 1;
+}
+/* !rules */
